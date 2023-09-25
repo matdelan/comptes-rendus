@@ -1,0 +1,56 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    margin-top: 50px;
+    width: 70%;
+    height: 500px;
+}
+
+.class__visible{
+    display: flex;
+}
+
+.class__invisible{
+    display: none;
+}
+
+.main__texts{
+    margin-right: 200px;
+    width: 65%;
+}
+
+.main__next{
+    width: 25%;
+}
+.main__text--align{
+    display: flex;
+}
+
+.main__color{
+    width: 150px;
+    height: 30px;
+    padding: 5px 0 0 10px;
+}
+
+.main__color--blue{
+    background-color: var(--main-color);
+}
+.main__color--lightblue{
+    background-color: var(--filter-bg-color);
+}
+.main__color--grey{
+    background-color: var(--main-bg-color);
+}
