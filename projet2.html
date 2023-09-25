@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -58,13 +60,18 @@
         <nav id="diapo1" class="main__card class__visible">
             <ul class="main__texts">
                 <h2 class="main__title">Le contexte</h2>
-                <li class="main__text">A partir de la maquette réaliser le site en html et css </li>
+                <img src="/assets/images/titre_booki.png" class="main__title--image">
+
+                <li class="main__text">A partir de la maquette réaliser la page de recherche du site booki en html et css <br> Le but de cette page est de proposer à l'utilisateur plusieurs choix pour trouver l'hébergement de ces reves !</li>
                 <li class="main__text">Police de Font Aweson : Raleway et icones</li>
+                <li class="main__text main__text--alerte">Interdiction d'utiliser du javascript ou des frameworks CSS comme bootstrap</li>
                 <li class="main__text main__text--align"> 
+                    Le thème couleur :
                     <div class="main__color main__color--blue">#0065FC</div>
                     <div class="main__color main__color--lightblue">#DEEBFF</div>
                     <div class="main__color main__color--grey">#F2F2F2</div>
                 </li>
+                <li class="main__text"><a href="https://matdelan.github.io/booki-starter-code">La version en ligne par Github pour la présentation du site</a></li>
             </ul>
             <button onclick="changerClasseDiapo1()" class="main__next">Next</button>
         </nav>
@@ -72,10 +79,16 @@
         <nav id="diapo2" class="main__card class__invisible">
             <ul class="main__texts">
                 <h2 class="main__title">Les technologies</h2>
-                <li class="main__text">html 5 - Respect des normes - Interet pour les balises</li>
-                <li class="main__text">css 3 -> Utilisation de Flex - Maximum de em et width</li>
-                <li class="main__text">git -> commit local et en ligfne + branch pour modification du code en local</li>
-                <li class="main__text"><a href="https://matdelan.github.io/booki-starter-code">github-> site en ligne avec page</a></li>
+                <div class="main__textimg">
+                    <img src="/assets/images/HTML5.png">
+                    <li class="main__text"> <p>Respect des normes <br> Interet pour la sémantique balises</p></li>
+                </div>
+                <div class="main__textimg">
+                    <img src="/assets/images/CSS3.png" class="main__text--image">
+                    <li class="main__text">Utilisation de Flex <br> Maximum de em pour les textes et icones <br>Egalement pour la width en %</li>
+                </div>
+                <li class="main__text">Git - Utilisation des commit, branche, meilleur comprehension par l'utilisation régulière</li>
+                <li class="main__text"><a href="https://matdelan.github.io/booki-starter-code">Github-> site en ligne avec page</a></li>
             </ul>
             <button onclick="changerClasseDiapo2()" class="main__next">Next</button>
         </nav>
@@ -83,19 +96,20 @@
         <nav id="diapo3" class="main__card class__invisible">
             <ul class="main__texts">
                 <h2 class="main__title">La technique</h2>
-                <li class="main__text">Architecture de fichier /assets -> CSS/IMG</li>
+                <li class="main__text">Les médias query : Fondamental pour adapter le site à tous les formats </li>
                 <li class="main__text">Gain performance : découpage en fichier css celon les formats </li>
-                <li class="main__text">Accens mis sur la lisibilité du code et l'interprétation des classes</li>
+                <li class="main__text">Accent mis sur la lisibilité du code et l'interprétation des classes</li>
+                <li class="main__text"><a href="https://matdelan.github.io/booki-starter-code" class="main__link">Présentation du code</a><br>- L'input de recherche<br>- les ajustements de la classe fauxlien sur la partie populaire<br>- Correction du code sur le nom des classes</li>
             </ul>
             <button onclick="changerClasseDiapo3()" class="main__next">Next</button>
         </nav>
 
         <nav id="diapo4" class="main__card class__invisible">
             <ul class="main__texts">
-                <h2 class="main__title">Bilan</h2>
-                <li class="main__text">Améliorations :Appliquer la nomenclature BEM des le début</li>
-                <li class="main__text">Retravailler les classes pour ne pas dépendre des éléments trop aléatoire sur un site dynamique, cela m'a appris la logique qui permet d'écris le html avec des classes opérationnelles avant meme avoir commencer la mise en style </li>
-                <li class="main__text">Ajouter le backend </li>
+                <h2 class="main__title">Améliorations</h2>
+                <li class="main__text">Appliquer la nomenclature BEM des le début</li>
+                <li class="main__text">L'importance du nommage des classes pour les humains <br> L'importance des balises pour les machines (SEO passif)</li>
+                <li class="main__text">Ajouter le backend, définir si les filtres sont des données disponnible dans la page ou si il faut faire une requete en backend, activer les liens </li>
             </ul>
             <button onclick="changerClasseDiapo4()" class="main__next">Next</button>
         </nav>
