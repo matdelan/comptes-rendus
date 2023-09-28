@@ -11,12 +11,15 @@
 body {
     display: flex;
     justify-content: center;
+
 }
 
 .main{
     margin-top: 50px;
     width: 70%;
     height: 500px;
+    max-width: 1440px;
+    box-sizing: border-box;
 }
 
 .class__visible{
@@ -56,14 +59,16 @@ body {
     display: flex;
 }
 
-.main__text--image{
+.text__image{
+
     padding: 20px;
+    
 }
 .main__text--alerte{
     color: red;
 }
-.main__link{
-    
+.title__image{
+    width: 100%;
 }
 .main__next{
     margin-top: 100px;
@@ -97,6 +102,8 @@ body {
 }
 .main__textimg{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 
