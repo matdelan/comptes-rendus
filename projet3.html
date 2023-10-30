@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Compte rendu Projet 3</title>
+
+    <script>
+        function changerClasseDiapo1() {
+            var element = document.getElementById("diapo1");
+            
+            element.classList.remove("class__visible");
+            element.classList.add("class__invisible");
+            var element2 = document.getElementById("diapo2");
+
+            element2.classList.add("class__visible");
+            element2.classList.remove("class__invisible");
+        }
+        function changerClasseDiapo2() {
+            var element = document.getElementById("diapo2");
+            
+            element.classList.remove("class__visible");
+            element.classList.add("class__invisible");
+            var element2 = document.getElementById("diapo3");
+
+            element2.classList.add("class__visible");
+            element2.classList.remove("class__invisible");
+        }
+        function changerClasseDiapo3() {
+            var element = document.getElementById("diapo3");
+            
+            element.classList.remove("class__visible");
+            element.classList.add("class__invisible");
+            var element2 = document.getElementById("diapo4");
+
+            element2.classList.add("class__visible");
+            element2.classList.remove("class__invisible");
+        }
+        function changerClasseDiapo4() {
+            var element = document.getElementById("diapo4");
+            
+            element.classList.remove("class__visible");
+            element.classList.add("class__invisible");
+            var element2 = document.getElementById("diapo5");
+
+            element2.classList.add("class__visible");
+            element2.classList.remove("class__invisible");
+        }
+        function changerClasseDiapo5() {
+            var element = document.getElementById("diapo5");
+            
+            element.classList.remove("class__visible");
+            element.classList.add("class__invisible");
+            var element2 = document.getElementById("diapo6");
+
+            element2.classList.add("class__visible");
+            element2.classList.remove("class__invisible");
+        }
+        function changerClasseDiapo6() {
+            var element = document.getElementById("diapo6");
+            
+            element.classList.remove("class__visible");
+            element.classList.add("class__invisible");
+            var element2 = document.getElementById("diapo7");
+
+            element2.classList.add("class__visible");
+            element2.classList.remove("class__invisible");
+        }
+        function changerClasseDiapo7() {
+            var element = document.getElementById("diapo7");
+            
+            element.classList.remove("class__visible");
+            element.classList.add("class__invisible");
+            var element2 = document.getElementById("diapo1");
+
+            element2.classList.add("class__visible");
+            element2.classList.remove("class__invisible");
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <nav id="diapo1" class="main__card class__visible">
+            <div class="main__texts">
+                <h2 class="main__title">L'objectif</h2>
+                <h2 class="main__title">La méthodologie</h2>
+                <h2 class="main__title">L'animation du coeur</h2>
+                <h2 class="main__title">L'animation du selecteur de plat</h2>
+                <h2 class="main__title">L'animation du loader</h2>
+                <h2 class="main__title">Améliorations</h2>
+            </div>
+            <button onclick="changerClasseDiapo1()" class="main__next">Next</button>
+        </nav>
+        <nav id="diapo2" class="main__card class__invisible">
+            <ul class="main__texts">
+                <h2 class="main__title">L'objectrif</h2>
+                <li class="main__text">Développer un site en mobile first pour réaliser une réservation en ligne de plusieurs restaurants parisien</li>
+                <li class="main__text">Intégration en mobile first</li>
+                <li class="main__text">Police de Font Aweson : Shrikhand & Roboto</li>
+                <li class="main__text main__text--align">
+                    Le thème couleur :
+                    <div class="main__color main__color--blue">#9356DC</div>
+                    <div class="main__color main__color--lightblue">#FF79DA</div>
+                    <div class="main__color main__color--grey">#99E2D0</div>
+                </li>
+                <li class="main__text">Validation W3C & compatible Firefox et Chrome</li>
+                <li class="main__text main__text--alerte">Interdiction d'utiliser du javascript sur le projet</li>
+                <li class="main__text"><a href="https://matdelan.github.io/ohmyfood/index.html">La version en ligne par Github pour la présentation du site</a></li>
+            </ul>
+            <button onclick="changerClasseDiapo2()" class="main__next">Next</button>
+        </nav>
+        <nav id="diapo3" class="main__card class__invisible">
+            <ul class="main__texts">
+                <h2 class="main__title">La méthodologie</h2>
+                <li class="main__text">Mise en place de SASS - BEM initier des le html pour une lecture fluide du sass</li>
+                <li class="main__text">Installation et paramétrages de l'extension Live SASS Compileur</li>
+                <li class="main__text">Organisation des dossiers avec la méthode 7 - 1 pattern <br> Gestion différente des média query</li>
+                <li class="main__text">Git - Commit régulier <br> Github pages pour le partage et l'accès en ligne </li>
+                <li class="main__text"><a href="https://github.com/matdelan/ohmyfood/deployments">Application de la convention de nommage pour les commits git</a></li>
+            </ul>
+            <button onclick="changerClasseDiapo3()" class="main__next">Next</button>
+        </nav>
+
+        <nav id="diapo4" class="main__card class__invisible">
+            <ul class="main__texts">
+                <h2 class="main__title">L'animation du coeur</h2>
+                <li class="main__text">Elle se déroule en plusieurs étapes et deux animations :</li>
+                <li class="main__text">A la base il faut encapsuler les deux coeurs dans la même cellule et les superposer</li>
+                <li class="main__text">Première animation faire disparaitre le coeur vide</li>
+                <li class="main__text">Seconde animation faire apparaitre le coeur plein</li>
+                <li class="main__text">Enfin il ne reste plus qu'a synchroniser les deux animations ensemble</li>
+            </ul>
+            <button onclick="changerClasseDiapo4()" class="main__next">Next</button>
+        </nav>
+
+        <nav id="diapo5" class="main__card class__invisible">
+            <ul class="main__texts">
+                <h2 class="main__title">L'animation du selecteur de plat</h2>
+                <li class="main__text">L'animation se déroule en quatre étapes :</li>
+                <li class="main__text">On fait apparaittre la balise</li>
+                <li class="main__text">Une qui agrandit en X le logo pendant le moitié du temps au départ</li>
+                <li class="main__text">Et l'autre qui élargie le padding de la balise pour qu'il prenne progressivement la place</li>
+                <li class="main__text">Et enfin une légère translation lattérale pour accompagner l'effet de mouvement et contreblancer le placement dut au scale</li> 
+                <li class="main__text">- Autre proposition -</li>
+            </ul>
+            <button onclick="changerClasseDiapo5()" class="main__next">Next</button>
+        </nav>
+
+        <nav id="diapo6" class="main__card class__invisible">
+            <ul class="main__texts">
+                <h2 class="main__title">L'animation du loader</h2>
+                <li class="main__text">Elle se compose d'un overlay et d'une animation :</li>
+                <li class="main__text">L'overlay couvre toute la page en semi-transparance [couleurs - curseur]</li>
+                <li class="main__text">L'animation des rectangles verticaux à son centre</li>
+                <li class="main__text">La disparition de l'overlay et le passage au second plan</li>
+            </ul>
+            <button onclick="changerClasseDiapo6()" class="main__next">Next</button>
+        </nav>
+        <nav id="diapo7" class="main__card class__invisible">
+            <ul class="main__texts">
+                <h2 class="main__title">Améliorations</h2>
+                <li class="main__text">Ajout du javascript pour améliorer les animations</li>
+                <li class="main__text">Positionnement de l'animation des barres verticales en synchronisant la balise avec les coordonées de la souris de l'utilisateur</li>
+                <li class="main__text">Animation pour les pages restaurants : implémentation d'une fonction javascript pour compter le nombre d'éléments présents et appliquer les animations aux n éléments</li>
+            </ul>
+            <button onclick="changerClasseDiapo7()" class="main__next">Next</button>
+        </nav>
+    </div>
+</body>
+</html>
