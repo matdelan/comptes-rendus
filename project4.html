@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Compte rendu Projet 4</title>
+
+    <script>
+        function changerClasseDiapo1() {
+            var element = document.getElementById("diapo1");
+            
+            element.classList.remove("class__visible");
+            element.classList.add("class__invisible");
+            var element2 = document.getElementById("diapo2");
+
+            element2.classList.add("class__visible");
+            element2.classList.remove("class__invisible");
+        }
+        function changerClasseDiapo2() {
+            var element = document.getElementById("diapo2");
+            
+            element.classList.remove("class__visible");
+            element.classList.add("class__invisible");
+            var element2 = document.getElementById("diapo3");
+
+            element2.classList.add("class__visible");
+            element2.classList.remove("class__invisible");
+        }
+        function changerClasseDiapo3() {
+            var element = document.getElementById("diapo3");
+            
+            element.classList.remove("class__visible");
+            element.classList.add("class__invisible");
+            var element2 = document.getElementById("diapo4");
+
+            element2.classList.add("class__visible");
+            element2.classList.remove("class__invisible");
+        }
+        function changerClasseDiapo4() {
+            var element = document.getElementById("diapo4");
+            
+            element.classList.remove("class__visible");
+            element.classList.add("class__invisible");
+            var element2 = document.getElementById("diapo5");
+
+            element2.classList.add("class__visible");
+            element2.classList.remove("class__invisible");
+        }
+        function changerClasseDiapo5() {
+            var element = document.getElementById("diapo5");
+            
+            element.classList.remove("class__visible");
+            element.classList.add("class__invisible");
+            var element2 = document.getElementById("diapo6");
+
+            element2.classList.add("class__visible");
+            element2.classList.remove("class__invisible");
+        }
+        function changerClasseDiapo6() {
+            var element = document.getElementById("diapo6");
+            
+            element.classList.remove("class__visible");
+            element.classList.add("class__invisible");
+            var element2 = document.getElementById("diapo1");
+
+            element2.classList.add("class__visible");
+            element2.classList.remove("class__invisible");
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <nav id="diapo1" class="main__card class__visible">
+            <div class="main__texts">
+                <h2 class="main__title">Le contexte</h2>
+                <h2 class="main__title"> Le Javascript : event , test champ date et email</h2>
+                <h2 class="main__title">Gestion de l'affichage des erreurs</h2>
+                <h2 class="main__title">Webpack</h2>
+                <h2 class="main__title">Améliorations & Bilan</h2>
+            </div>
+            <button onclick="changerClasseDiapo1()" class="main__next">Next</button>
+        </nav>
+        <nav id="diapo2" class="main__card class__invisible">
+            <ul class="main__texts">
+                <h2 class="main__title">Le contexte</h2>
+                <li class="main__text">Test de champs de formulaires : <br> Prénom <br> Nom <br> date de naissance <br> email <br> Radio <br> checkbox  </li>
+                <li class="main__text">Le résultat lors de la validation du formulaire est l'inscription de joueur à un tournoi.</li>
+                <li class="main__text">Si les champs ne sont pas correct une erreur s'affiche au niveau de celui ci avec un message pour justifier l'erreur</li>
+                <li class="main__text">Le fichier principal sera composé de :<br> Import de fonctions sur plusieurs fichiers <br> de déclarations de variable <br> et de tous les évènements d'interfaces js</li>
+                <li class="main__text">Utilisation du javascript pur , ES2015 :<br>
+                    – Manipulation des tableaux et des objets<br>
+                    – Ajout des spread operators<br>
+                    – Définition des objets<br>
+                    – Chaine multi-ligne <br>
+                </li>
+            </ul>
+            <button onclick="changerClasseDiapo2()" class="main__next">Next</button>
+        </nav>
+        <nav id="diapo3" class="main__card class__invisible">
+            <ul class="main__texts">
+                <h2 class="main__title">Le Javascript : event , test champ date et email</h2>
+                <li class="main__text">Event : foucusout & change. </li>
+                <li class="main__text">Pour la date on initialise un objet date et on soustrait 18 et 80 à l'année et on la compare avec la date renseignée.</li>
+                <li class="main__text">Pour l'email on utilisera une RegExp ou Régular Expression pour valider la saise de l'adresse</li>
+                <li class="main__text">/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/</li>
+                <li class="main__text"><a href="https://matdelan.github.io/GameOn-website-FR/">La version en ligne par Github pour la présentation du site</a></li>
+            </ul>
+            <button onclick="changerClasseDiapo3()" class="main__next">Next</button>
+        </nav>
+
+        <nav id="diapo4" class="main__card class__invisible">
+            <ul class="main__texts">
+                <h2 class="main__title">Gestion de l'affichage des erreurs</h2>
+                <li class="main__text">1 controle individuel de chaque champ</li>
+                <li class="main__text">Et 1 controle global pour vérifier tous les champs avant la validation finale</li>
+                <li class="main__text">Pour ce faire on utilisera les attributs data-error et data-error-visible du parents du champs input</li>
+                <li class="main__text">Test de l'attribut data-error target.attributes[1].value == "" <br>Mieux vaut utiliser la méthode target.getAttribute("data-error-visible") qui retourne un booléen</li>
+                <li class="main__text"><a href="https://matdelan.github.io/GameOn-website-FR/">Lien du site</a></li>
+            </ul>
+            <button onclick="changerClasseDiapo4()" class="main__next">Next</button>
+        </nav>
+
+        <nav id="diapo5" class="main__card class__invisible">
+            <ul class="main__texts">
+                <h2 class="main__title">Webpack</h2>
+                <li class="main__text">Il regroupe plusieurs avantages : </li>
+                <li class="main__text">Miniaturisation du fichier final /dist/index.js</li>
+                <li class="main__text">Compatibilité entre les différentes version de navigateur avec Babel </li>
+                <li class="main__text">Ajout d'un serveur comme live serveur sur VsCode</li>
+                <li class="main__text">La gestion de la précompilation des fichiers SASS et SCSS</li>
+                <li class="main__text">Commande pour le build : webpack --watch dans fichier package.json</li>
+            </ul>
+            <button onclick="changerClasseDiapo5()" class="main__next">Next</button>
+        </nav>
+
+        <nav id="diapo6" class="main__card class__invisible">
+            <ul class="main__texts">
+                <h2 class="main__title">Améliorations</h2>
+                <li class="main__text">Installer babel avec Webpack en initiant un webpack.config.json + SASS compileur + live server</li>
+                <li class="main__text">Mettre lien back-end pour enregistrer le formulaire</li>
+                <li class="main__text">Passer en SASS</li>
+                <h2 class="main__title">Bilan</h2>
+                <li class="main__text">Revoir le code HTML pour unifier les composants</li>
+                <li class="main__text">Corriger les erreurs html (W3C validator)</li>
+            </ul>
+            <button onclick="changerClasseDiapo6()" class="main__next">Next</button>
+        </nav>
+    </div>
+</body>
+</html>
